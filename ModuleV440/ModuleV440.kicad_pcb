@@ -2280,7 +2280,7 @@
   (gr_line (start 104.1476 99.7976) (end 103.4376 99.7976) (layer "Edge.Cuts") (width 0.15) (tstamp 4e376332-7856-44a0-b84f-b341d48d7a4a))
   (gr_line (start 103.6976 73.2236) (end 122.5776 73.2236) (layer "Edge.Cuts") (width 0.1) (tstamp d1d6d551-3ba6-4d8a-88aa-be236723e495))
   (gr_arc (start 130.4426 47.9876) (mid 131.50326 48.42694) (end 131.9426 49.4876) (layer "Edge.Cuts") (width 0.15) (tstamp ebc451a4-8860-4d26-965c-52200209efd5))
-  (gr_text "©2019-2022\nStuart Pittaway\nMatthias Urlichs" (at 109.6176 87.3376) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-00005bf98e96)
+  (gr_text "©2019-2021\nStuart Pittaway" (at 109.6176 87.3376) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-00005bf98e96)
     (effects (font (size 1.2 1.2) (thickness 0.3)) (justify mirror))
   )
   (gr_text "github.com/stuartpittaway/diyBMSv4" (at 124.8676 71.6876 90) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-00005bf98eb5)
