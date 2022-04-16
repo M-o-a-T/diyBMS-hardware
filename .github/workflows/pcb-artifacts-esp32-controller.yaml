@@ -49,14 +49,14 @@ jobs:
         echo "COMMIT = ${COMMIT}"    
         echo "ref: ${{ github.ref }}"
         echo "default: ${{ env.default }}"
-        sed -i "s!<<hash>>!${COMMIT}!" ControllerCircuit/ControllerCircuit.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" ControllerCircuit/ControllerCircuit.kicad_pcb ModuleV440/ModuleV440.kicad_pcb
 
     - name: Update the PCBs with the git hash and BETA.
       if: steps.extract_branch.outputs.branch != env.main_branch
       run: |
         export COMMIT=$(git rev-parse --short HEAD)
         echo "COMMIT = ${COMMIT}"
-        sed -i "s!<<hash>>!BETA-${COMMIT}!" ControllerCircuit/ControllerCircuit.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" ControllerCircuit/ControllerCircuit.kicad_pcb ModuleV440/ModuleV440.kicad_pcb
 
     - name: Prepare artifacts
       run: |
