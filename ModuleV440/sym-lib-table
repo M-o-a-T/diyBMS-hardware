@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "ModuleV440-rescue")(type "Legacy")(uri "${KIPRJMOD}/ModuleV440-rescue.lib")(options "")(descr ""))
+  (lib (name "diybms")(type "KiCad")(uri "${KIPRJMOD}/../kicad/diybms.kicad_sym")(options "")(descr ""))
+)
