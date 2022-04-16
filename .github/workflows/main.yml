@@ -38,7 +38,7 @@ jobs:
           sudo apt install --install-recommends kicad
 
       - name: Run kikit
-        run: /home/runner/.local/bin/kikit fab jlcpcb --assembly --schematic ./ModuleV421/ModuleV421.sch --field LCSCStockCode --missingWarn ./ModuleV421/ModuleV421.kicad_pcb ./ModuleV421
+        run: /home/runner/.local/bin/kikit fab jlcpcb --assembly --schematic ./ModuleV421/ModuleV421.kicad_sch --field LCSCStockCode --missingWarn ./ModuleV421/ModuleV421.kicad_pcb ./ModuleV421
 
       - name: Publish Artifacts 1
         uses: actions/upload-artifact@v2
@@ -51,7 +51,7 @@ jobs:
           if-no-files-found: error
 
       - name: Run kikit for GERBER
-        run: /home/runner/.local/bin/kikit fab jlcpcb --assembly --schematic ./ModuleV440/ModuleV440.sch --field LCSCStockCode --missingWarn ./ModuleV440/ModuleV440.kicad_pcb ./ModuleV440
+        run: /home/runner/.local/bin/kikit fab jlcpcb --assembly --schematic ./ModuleV440/ModuleV440.kicad_sch --field LCSCStockCode --missingWarn ./ModuleV440/ModuleV440.kicad_pcb ./ModuleV440
 
 #      - name: Run kikit for 3D print solder stencil
 #        run: /home/runner/.local/bin/kikit stencil createprinted --pcbthickness 1.6 --thickness 1.0  ./ModuleV440/ModuleV440.kicad_pcb ./ModuleV440
